@@ -1,1 +1,8 @@
-<h1>Hello World :)</h1>
+<h1 class="text-center">My Places</h1>
+<br />
+<div class ="col-8 offset-2">
+  <% @places.each do |p| %>
+    <p><b><%= p.name %>:</b>&nbsp;&nbsp;<%= p.description %></p>
+  <% end %>
+
+</div>

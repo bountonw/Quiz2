@@ -5,7 +5,7 @@
     <span class="place">
       <i id="icon-delete" class="fa fa-trash-o edit" aria-hidden="true"></i>
       <i id="icon-edit" class="fa fa-pencil edit" aria-hidden="true"></i>
-      &nbsp;<b><%= p.name %>:</b>
+      &nbsp;<b><%= link_to p.name , place_path(p) %>:</b>
       &nbsp;&nbsp;<%= p.description %>
     </span>
     <br />

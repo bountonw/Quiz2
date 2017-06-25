@@ -58,5 +58,4 @@ gem 'jquery-rails'
 gem 'simple_form'
 gem 'popper_js', '~> 1.9.9'
 gem 'devise'
-gem 'rails-assets-tether', '~> 1.1', '>= 1.1.1'
 gem "font-awesome-rails"

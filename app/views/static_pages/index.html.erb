@@ -2,7 +2,15 @@
 <br />
 <div class ="col-8 offset-2">
   <% @places.each do |p| %>
-    <p><b><%= p.name %>:</b>&nbsp;&nbsp;<%= p.description %></p>
+    <span class="place">
+      <i id="icon-delete" class="fa fa-trash-o edit" aria-hidden="true"></i>
+      <i id="icon-edit" class="fa fa-pencil edit" aria-hidden="true"></i>
+      &nbsp;<b><%= p.name %>:</b>
+      &nbsp;&nbsp;<%= p.description %>
+    </span>
+    <br />
   <% end %>
 
 </div>
+
+<%# link_to "delete", place_path(p), method: :delete %>

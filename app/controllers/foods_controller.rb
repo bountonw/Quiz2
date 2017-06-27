@@ -5,4 +5,7 @@ before_action :authenticate_user!, only: [:new, :create, :edit, :update, :destro
 
   end
 
+  def new
+    @food = Food.new
+  end
 end

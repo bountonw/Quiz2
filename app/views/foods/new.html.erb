@@ -1,0 +1,9 @@
+<div class="col-8 offset-2">
+  <h1 id="title">My Favorite Foods</h1>
+    <%= simple_form_for @food, url: new_food_path do |f| %>
+    <%= f.input :name %>
+    <%= f.input :ethnicity %>
+    <br />
+    <%= f.submit "Create", class: 'btn btn-primary' %>
+  <% end %>
+</div>

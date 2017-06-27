@@ -1,0 +1,9 @@
+<div class="col-8 offset-2">
+  <span>
+    <b><%= link_to @food.name, food_path(@food) %>:</b>&nbsp;&nbsp;<i><%= @food.ethnicity %></i>
+  </span>
+  <br />
+  <br />
+  <%= link_to "edit", edit_food_path(@food), class: 'btn btn-primary' %>
+  <%= link_to "delete", food_path(@food), method: :delete, class: 'btn btn-danger' %>
+</div>

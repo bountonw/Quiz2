@@ -1,4 +1,11 @@
 <div class="col-8 offset-2">
   <h1 id="title">My Favorite Foods</h1>
 
+  <% @foods.each do |food| %>
+    <span>
+      <b><%= link_to food.name, food_path(food) %>:</b>&nbsp;&nbsp;<i><%= food.ethnicity %></i>
+    </span>
+    <br />
+  <% end %>
+
 </div>
